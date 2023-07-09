@@ -1,5 +1,5 @@
-public class PrintFigureConsole {
-    public void printFigureVar(Shape shape) {
-        System.out.println("This is Figure : " + shape.printName() + "!");
+public  class  PrintFigureConsole {
+    public static void printFigure(Shape shape) {
+        System.out.println("This is Figure : " + shape.getName() + "!");
     }
 }

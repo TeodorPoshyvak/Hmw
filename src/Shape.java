@@ -1,7 +1,3 @@
-public class Shape{
-    private String name = "base";
-
-    public String printName(){
-       return name;
-    }
+public abstract class Shape{
+    public abstract String getName();
 }

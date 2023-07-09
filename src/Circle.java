@@ -1,9 +1,11 @@
 public class Circle extends Shape{
+    public String circle;
 
-    private String circle = "Circle";
-
+    public Circle(String circle){
+        this.circle = circle;
+    }
     @Override
-    public String printName() {
-       return circle;
+    public String getName() {
+        return circle;
     }
 }

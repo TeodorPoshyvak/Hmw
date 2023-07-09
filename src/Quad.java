@@ -1,9 +1,12 @@
 public class Quad extends Shape{
-    private String quad = "Quad";
+    public String quad;
+
+    public Quad(String quad){
+        this.quad = quad;
+    }
 
     @Override
-    public String printName() {
-       return quad;
-
+    public String getName() {
+        return quad;
     }
 }

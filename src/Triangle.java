@@ -1,8 +1,12 @@
 public class Triangle extends Shape{
-    private String triangle = "Circle";
+    public String triangle;
+
+    public Triangle(String triangle){
+        this.triangle = triangle;
+    }
 
     @Override
-    public String printName() {
+    public String getName() {
        return triangle;
     }
 }

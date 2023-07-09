@@ -1,20 +1,14 @@
 public class TestShape {
     public static void main(String[] args) {
-         PrintFigureConsole printFigureConsole = new PrintFigureConsole();
-         Shape shape = new Shape();
-         Shape circle = new Circle();
-         Shape diamond = new Diamond();
-         Shape quad = new Quad();
-         Shape trapezium = new Trapezium();
-         Shape triangle = new Triangle();
+         Shape[] shapes = new Shape[5];
+         shapes[0] =  new Circle("Circle");
+         shapes[1] =  new Diamond("Diamond");
+         shapes[2] =  new Quad("Quad");
+         shapes[3] =  new Trapezium("Trapezium");
+         shapes[4] =  new Triangle("Triangle");
 
-         printFigureConsole.printFigureVar(shape);
-         printFigureConsole.printFigureVar(circle);
-         printFigureConsole.printFigureVar(diamond);
-         printFigureConsole.printFigureVar(quad);
-         printFigureConsole.printFigureVar(trapezium);
-         printFigureConsole.printFigureVar(triangle);
-
-
+         for(Shape figure : shapes){
+              PrintFigureConsole.printFigure(figure);
+         }
     }
 }

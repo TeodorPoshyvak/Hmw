@@ -1,8 +1,12 @@
 public class Diamond extends Shape{
-    private String diamond = "Diamond";
+    public String diamond;
+
+    public Diamond(String diamond){
+        this.diamond = diamond;
+    }
 
     @Override
-    public String printName() {
+    public String getName() {
         return diamond;
     }
 }
